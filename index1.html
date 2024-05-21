@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritick Sethi</title>
+    <link rel="stylesheet" type="text/css" href="ritick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Ritick's Portfolio</h1>
+        <h1>Guten Tag</h1>
+        
+        <nav> 
+            <ul class="menu">
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#experience">Experience</a> </li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resumeSkills">Resume & Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#certification">Certification</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header> 
+    
+    <section id="aboutMe">
+        <div class="container">
+            <img src="Imgs/IMG_6427.jpg" alt="Profile Picture" width="250" height="280"/> 
+            <h2>About Me</h2>
+            <p>Name: Ritick Sethi</p>
+            
+            <p>Immatrikulation: 88831</p>
+            <p> Pursuing: MSc. Sensor System Technology(SSTM)</p>
+            <p>University: Karlsruhe University of applied sciences.</p>
+            <p>Address: Willy Andreas Alle 7, 76131, Karlsruhe, Germany.</p>
+            
+        </div>
+    </section>
+    <section id="experience">
+        <div class = "container">
+            
+            <div class="card experienceCard">
+                <h2>Experience:</h2>
+                <h4 onclick="toggleDropdown('bosch')">Working Student IT support</h4>
+                <div id="boschDropdown" style="display: none;">
+                    <p>Robert Bosch GmbH</p>
+                    <p>May 2024 - present</p>
+                    <p>Assisted in the technical assistance and customer service for employees with disabilities. Provided information</p>
+                
+            </div>
+       
+
+            <h4 onclick="toggleDropdown('fzi')">Student Research Asistant (HIWI)</h4>
+            <div id="fziDropdown" style="display: none;">
+                <p>Forschungszentrum informatik FZI</p>
+                <p>February 2024 - April 2024</p>
+                <p>Currently spearheading the implementation of a 3D planner for climbing maneuvers of mobile robots, leveraging ROS2 and Mujoco. Integrating Machine Learning techniques to enhance robotic navigation and agility, pushing the boundaries of innovation.
+                    &
+                    Front-end development using HTML, CSS, JavaScript, and React.</p>
+                <p>Responsible for  Contributing to the development of innovative solutions for robotic navigation challenges.
+                    Designing and building user interfaces to enhance user experience and interaction with robotics systems.</p>
+            
+            </div>
+            <h4 onclick="toggleDropdown('kit')">Student Research Asistant (HIWI)</h4>
+            <div id="kitDropdown" style="display: none;">
+                <p>Karlsruhe Institute of Technology</p>
+                <p>Jully 2023 - December 2023</p>
+                <p>Student Research Assistant functioning in Sensor Selection and Installation role.
+                </p>
+                <p>To help and improve the research in the different lighting scenarios.
+                    Accumulate different data to the cloud and govern data.</p>
+            
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projectContainer container">
+        <div class="card experienceCard">
+            <h2>Projects </h2>
+
+            <h4 onclick="toggleDropdown('eJunky')"> E-JUNKY (12/2020 – 02/2021)</h4>
+            <div id="eJunkyDropdown" style="display: none;">
+                <img  src="Imgs/Screenshot 2024-04-20 at 16.27.50.png" alt="Project Image" height="250px" width="250px"/>
+                <p>This project was developed as part of innovation for Microsoft Imagine Cup 2021 at the Manav Rachna International Institue of Research and Studies.</p>
+                <p>The goal of this project is to remove the Electronic waste from the local community and dump them Leggaly</p>
+                <p>Developed an IoT system using RPI to manage e-waste pollution, leveraging
+                    cloud and data technologies for monitoring and predicting pollution hotspots.</p>
+                <div class="VideoContainer">
+                    <video id="E-JUNKYVideo" controls width="320" height="240"> 
+                        <source src="Imgs/ejunky vedio.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
+        <h4 onclick="toggleDropdown('smart')"> E-RENTAL CYCLE (10/2019 – 01/2020)</h4>
+        <div id="smartDropdown" style="display: none;">
+            <img  src="Imgs/Screenshot 2024-04-20 at 16.25.10.png" alt="Project Image" height="250px" width="250px"/> 
+            <p>This project was developed at the Manav Rachna International Institue of Research and Studies.</p>
+            <p>The goal of this project is to provide a hassle-free service to travel short distances and start a new wave of fitness and reducing population.</p>
+            <p>Designed hardware/software for a rental cycle system using Arduino UNO,
+                featuring various sensors, a user interface, and data analysis for continuous
+                improvement.</p>
+            <div class="VideoContainer">
+                <video id="E-RentalCycleVideo" controls width="320" height="240"> 
+                    <source src="Imgs/E cyclefinal video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+            <h4 onclick="toggleDropdown('vajra')"> VAJRA KAKSH (BACHELOR THESIS - 12/2021 – 02/2022)</h4>
+            <div id="vajraDropdown" style="display: none;">
+                <img  src="Imgs/Screenshot 2024-04-20 at 09.53.56.png" alt="Project Image" height="250px" width="350px"/> 
+                <p>This project was developed as part of my bachelor thesis at the Manav Rachna International Institue of Research and Studies.</p>
+                <p>The goal of this project is to provide a hassle-free and virus-free way to commute in public places and institutes</p>
+                <p>IMPLEMENTED AN IOT SYSTEM WITH RPI FOR DATA COLLECTION AND
+                    ANALYSIS, PREDICTING VIRUS SPREAD RISKS, AND FORMULATING AN
+                    EFFICIENT DATA STRATEGY.</p>
+                <div class="VideoContainer">
+                    <video id="VajraKakshVideo" controls width="320" height="240"> 
+                        <source src="Imgs/VAjra Kaksh RSK.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+        </div>
+        </div>
+           
+            
+        
+    </section>
+    <section id="resumeSkills">
+        <div class = "container">
+        <div class="resumeSkills_ul">
+         
+        <h2>Resume & Skills</h2>
+        <h3>Skills</h3>
+        <ul>
+            
+            <li>GIT</li>
+            <li>ROS2</li>
+            <li>Linux</li>
+            <li>Mujoco</li>
+            
+            <li>Python/R/SQL</li>
+            <li>Embedded System</li>
+            <li>Microsoft Office</li>
+            <li>Robotic Process Automation</li>
+            
+            <li>Front-end development (HTML, CSS, JavaScript React)</li>
+           
+           
+            
+        </ul>
+       
+            <div class="resumeSkills_button">
+                <a href="Imgs/Ritick_CV.pdf" target="_blank"><button class="resumeSkills_button">Download Resume</button></a>
+            </div>
+
+        </div>
+       
+        
+       
+        </div>
+    </section>
+    <section id="languages">
+        <div class="container">
+            <h2>Languages</h2>
+        <ul>
+            <li>German: &#9733;&#9733;&#9733;</li>
+            <li>English: &#9733;&#9733;&#9733;&#9733;&#9733;</li>
+            <li>Hindi: &#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</li>
+        </ul>
+
+        </div>
+        
+    </section>
+    <section id="certification">
+        <div class="container">
+            <h2>Certifications</h2>
+            <h4 onclick="toggleDropdown('blender')">1: BLENDER  2.8</h4>
+            <div id="blenderDropdown" style="display: none;">    
+                <img src="Imgs/Blender.jpg" alt="Blender Certificate" width="250" height="180">
+                <p>Issued by: Udemy</p>
+                <p>Completion Date: May 2020</p>
+                <p>Description: This certification covers advanced 3D modeling, animation, rendering, and simulation techniques for creating stunning visual effects and animations..</p>
+            </div>
+            <h4 onclick="toggleDropdown('dataAnalyst')">2: BECOME A DATA ANALYST</h4>
+            <div id="dataAnalystDropdown" style="display: none;">    
+                <img src="Imgs/CertificateOfCompletion_Become a Data Analyst.pdf" alt="Data Analyst Certificate" width="250" height="180">
+                <p>Issued by: Udemy</p>
+                <p>Completion Date: May 2023</p>
+                <p>Description: This certification covers essential data analysis skills, including data wrangling, exploratory data analysis, and data visualization.</p>
+            </div>
+            <h4 onclick="toggleDropdown('robotic')">3: ROBOTIC PROCESS AUTOMATION</h4>
+            <div id="roboticDropdown" style="display: none;">    
+                <img src="Imgs/Rpa main 4.PNG" alt="RPA Certificate" width="250" height="180">
+                <p>Issued by: Udemy</p>
+                <p>Completion Date: December 2021</p>
+                <p>Description: This certification equips individuals with the expertise to automate repetitive tasks using software robots, enhancing operational efficiency and productivity.</p>
+            </div>
+    
+            <h4 onclick="toggleDropdown('aws')">4: INTRODUCTION TO CLOUD COMPUTING ON AMAZON AWS</h4>
+            <div id="awsDropdown" style="display: none;">    
+                <img src="Imgs/AWS Basic.pdf" alt="AWS Certificate" width="250" height="180">
+                <p>Issued by: Udemy</p>
+                <p>Completion Date: January 2022</p>
+                <p>Description: This certification equips foundational knowledge in cloud computing principles, AWS services, and best practices for building scalable and secure cloud solutions.</p>
+            </div>
+            <h4 onclick="toggleDropdown('iot')">5: AN INTRODUCTION TO PROGRAMMING WITH THE INTERNET OF THINGS</h4>
+            <div id="iotDropdown" style="display: none;">    
+                <img src="Imgs/An introduction to programing with iot.pdf" alt="IoT Certificate" width="250" height="180">
+                <p>Issued by: Coursera</p>
+                <p>Completion Date: January 2022</p>
+                <p>Description: This certification provides an introduction to programming IoT devices using Python, Arduino, and cloud services.</p>
+            </div>
+
+        </div>
+       
+    
+       
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Get in touch with me!</h2>
+            <table class="contactTable">
+                <h4>Contact me using my  email address or social media platforms.</h4>
+                <tr>
+                    <td><i class="far fa-envelope"></i></td>
+                    <td><a href="mailto:riticksethi8@gmail.com">riticksethi8@gmail.com</a></td>
+                </tr>
+                <tr>  
+                    <td><i class="fab fa-linkedin"></i></td>
+                    <td><a href="https://www.linkedin.com/in/ritick-sethi-423007179/">Ritick Sethi's LinkedIn Profile</a></td>
+                </tr>
+            </table>
+            <h4>You can update your request using the form!</h4>
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Send Message">
+            </form>
+            
+        </div>
+    </section>
+    
+    
+
+    <script>
+        function toggleDropdown(projectId) {
+            var dropdown = document.getElementById(projectId + 'Dropdown');
+            if (dropdown.style.display === "none") {
+                dropdown.style.display = "block";
+            } else {
+                dropdown.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

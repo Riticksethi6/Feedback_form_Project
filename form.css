@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align text */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left; /* Align form elements to the left */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a.button {
+    display: block;
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #007bb3;
+}
+
+.section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.explore-more {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.linkedin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin-button {
+    display: flex;
+    align-items: center;
+    background-color: #0077B5;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.linkedin-button:hover {
+    background-color: #005f87;
+}
+
+.linkedin-container img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Add some spacing between the icon and text */
+    vertical-align: middle; /* Align the icon vertically */
+}
+
+.index1-display {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    .button-container a {
+        margin-bottom: 10px;
+    }
+}

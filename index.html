@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form action="/cgi-bin/submit_data.pl" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+            <label for="improvements">Areas of Improvement:</label><br>
+            <textarea id="improvements" name="improvements" rows="4" cols="50"></textarea><br><br>
+            <label for="linkedin">Drop your LinkedIn:</label><br>
+            <input type="text" id="linkedin" name="linkedin" placeholder="LinkedIn Profile URL"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="section explore-more">
+            <h2>Explore More</h2>
+            <div class="button-container">
+                <a href="/index1.html" class="button" target="_blank">Ritick Sethi's Portfolio</a>
+                <a href="/cgi-bin/view_data.pl" class="button" target="_blank">View Submitted Data</a>
+            </div>
+            <p>If you found my work valuable, please consider <strong>recommending and endorsing me</strong> on LinkedIn.</p>
+            <div class="linkedin-container">
+                <a href="https://www.linkedin.com/in/riticksethi/" class="linkedin-button" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="LinkedIn Logo">
+                    Recommend & Endorse on LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
